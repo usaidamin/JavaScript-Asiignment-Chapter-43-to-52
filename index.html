@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Chapters Assignment 43 to 52</h1>
+    <h2>Chapter 43 to 48</h2>
+
+    <h3>Question 1</h3>
+    <a href="javascript:void(0)" onclick="link()" id="clickhere">click here!</a>
+
+    <h3>Question 2</h3>
+    <img src="./bmw1.jpg" alt="" onclick="img()" id="img1" width="200">
+    <img src="./bmw2.jpg" alt="" onclick="imG()" id="img2" width="200">
+
+    <h3>Question 3</h3>
+    <table> 
+        <tr>
+            <td id="dlt1">John 10 <button onclick="dlt1()">Delete</button></td>
+        </tr>
+        <tr>
+            <td id="dlt2">Doe 9 <button onclick="dlt2()">Delete</button></td>
+            </td>
+        </tr>
+        <tr>
+            <td id="dlt3">Mark 10 <button onclick="dlt3()">Delete</button></td>
+            </td>
+        </tr>
+        <tr>
+            <td id="dlt4">James 8 <button onclick="dlt4()">Delete</button></td>
+            </td>
+        </tr>
+    </table>
+
+    <h3>Question 4</h3>
+    <img src="./bmw2.jpg" onmouseover="mouseOver('in')" onmouseout="mouseOut('out')" id="img" alt="">
+
+        <h3>Question 5</h3>
+    <button onclick="addition()">+</button>
+        <span id="click">0</span>
+        <button onclick="subtraction()">-</button>
+
+    <h2>Chapter 43 to 48 completed</h2>
+
+
+    <h2>Chapter 49 to 52</h2>
+    <h3>Question 1</h3>
+
+    <input type="text" id="name" placeholder="Enter Your Name">
+        <br>
+        <input type="text" id="email" placeholder="Enter Your Email">
+        <br>
+        <input type="password" id="password" placeholder="Enter Your Password">
+        <br>
+        <button type="submit" onclick="getValue()">Submit</button>
+
+    <h3>Question 2</h3>
+    <p id="para">Lorem ipsum dolor sit amet</p>
+        <a href="javascript:void(0)" onclick="seeMore(this)">See More</a>
+
+    <h3>Question 3</h3>
+    <table>
+            <tr>
+                <td id="dlt1">John 10 <button onclick="dlt1()">Delete</button></td>
+            </tr>
+            <tr>
+                <td id="dlt2">Doe 9 <button onclick="dlt2()">Delete</button></td></td>
+            </tr>
+            <tr>
+                <td id="dlt3">Mark 10 <button onclick="dlt3()">Delete</button></td></td>
+            </tr>
+            <tr>
+                <td id="dlt4">James 8 <button onclick="dlt4()">Delete</button></td></td>
+            </tr>
+        </table>
+ 
+
+    <br>
+    <br>
+    <!-- here i used chatgpt -->
+    <h3>Question 4</h3>
+    <h2>Enter Student Details</h2>
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+  <input type="button" value="Add Student" onclick="addStudent()">
+</form>
+<h2>Student Details</h2>
+<table id="studentTable">
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Action</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<div id="editForm" class="hidden">
+  <h2>Edit Student Details</h2>
+  <form>
+      <label for="editName">Name:</label>
+      <input type="text" id="editName" name="editName" required><br><br>
+      <label for="editEmail">Email:</label>
+      <input type="email" id="editEmail" name="editEmail" required><br><br>
+      <label for="editPhone">Phone:</label>
+      <input type="tel" id="editPhone" name="editPhone" pattern="[0-9]{10}" required><br><br>
+      <input type="hidden" id="editIndex" name="editIndex">
+      <input type="button" value="Update Student" onclick="updateStudent()">
+      <input type="button" value="Cancel" onclick="cancelEdit()">
+  </form>
+</div>
+</body>
+<script src="./app.js"></script>
+
+</html>
